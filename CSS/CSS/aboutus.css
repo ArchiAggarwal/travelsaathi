@@ -1,0 +1,89 @@
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* About Us Section */
+.about-section {
+    background-color: black;
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: #0575E6;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Flexbox layout for cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #00F260;
+    margin-bottom: 15px;
+}
+
+.card p, .card ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+}
+
+.card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+

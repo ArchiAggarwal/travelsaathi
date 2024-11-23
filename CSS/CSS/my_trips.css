@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1616;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.no_trips{
+    color:#ffff;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.my-trips {
+    padding: 20px;
+    text-align: left;
+    margin-top: 50px;
+
+}
+
+.my-trips-heading {
+    font-family: 'Food Family', sans-serif;
+    font-size: 36px;
+    color: #00F260;
+    margin-left: 115px;
+}
+
+.card-container1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.card-a {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+   
+    
+}
+
+.card-a:hover {
+    transform: scale(1.05);
+}
+
+.card-a img {
+    width: 100%;
+    height: 250px;
+}
+
+.card-a-content {
+    padding: 20px;
+}
+
+.card-a-content h2 {
+    font-size: 24px;
+    color: #00ccff;
+}
+
+.card-a-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.card-a-content .price {
+    font-size: 20px;
+    color: orange;
+    margin: 10px 0;
+}

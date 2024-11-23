@@ -1,0 +1,101 @@
+h1 {
+    color: #ffffff; /* White text color to stand out on a dark background */
+    font-size: 36px; /* Adjust size as needed */
+    text-align: center; /* Center align the text */
+    margin: 20px auto; /* Center the element itself */
+    font-family: 'Arial', sans-serif; /* Change the font as per your preference */
+    text-transform: uppercase; /* Make the text uppercase for emphasis */
+    letter-spacing: 2px; /* Slight spacing between letters */
+    border-bottom: 2px solid #ffcc00; /* Adds a yellow underline */
+    width: fit-content; /* The width will adjust to fit the text content */
+    padding-bottom: 10px;
+    display: block; /* Make sure it behaves like a block element for centering */
+}
+
+
+/* Container for wishlist items */
+.wishlist-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    gap: 20px; /* Space between wishlist cards */
+    padding: 20px;
+    justify-content: center; /* Center the cards horizontally */
+    position: relative;
+    margin-top: 20px; /* Add space above the wishlist */
+}
+
+/* Single definition for wishlist-card */
+.wishlist-card {
+    background-color: #1a1a1a; /* Matching your package card style */
+    width: 400px; /* Set width for each card */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    position: relative; /* So the heart icon can be positioned absolutely */
+    overflow: hidden; /* Ensure content stays within card */
+}
+
+.wishlist-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+}
+
+/* Heart Icon Styling */
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ffcc00; /* Adjust heart color */
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, color 0.2s;
+    cursor: pointer;
+    z-index: 1; /* Ensure heart icon is above other content */
+}
+
+.heart-icon.active {
+    color: #ff0000; /* Solid red heart for liked items */
+}
+
+.heart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Styling for package image */
+.package-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Ensure image maintains aspect ratio */
+    border-radius: 10px;
+}
+
+/* Styling for the text and price inside the wishlist card */
+.wishlist-card h3 {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.wishlist-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price-per-person {
+    color: #ffcc00;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .wishlist-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

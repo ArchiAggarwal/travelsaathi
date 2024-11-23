@@ -1,0 +1,68 @@
+body {
+    background-color: #111; /* Dark background to match the theme */
+    color: #fff; /* White text for contrast */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the section containing the event details */
+.events-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/* Title styling */
+.events-title {
+    font-size: 2em;
+    color: #00ffd5; /* Bright color to match the theme */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Event card styling */
+.event-card {
+    background-color: #222; /* Slightly lighter background for event card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height:700px;
+    display: flex; /* Align content in a row */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align the children */
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.event-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Event content styling */
+.event-content {
+    text-align: center;
+    max-width: 90%; /* Limit width for better readability */
+}
+
+/* Description text styling */
+.event-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ddd;
+    margin-top: 10px; /* Add some margin for spacing */
+}
+
+/* Date and Location text styling */
+.event-date, .event-location {
+    font-size: 1em;
+    color: #aaa; /* Lighter color for secondary info */
+}
